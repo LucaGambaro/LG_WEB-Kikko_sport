@@ -9,15 +9,15 @@ export default function Home() {
   const ref = useRef(null);
 
   return (
-    <>
+    <div>
       <StyleSheet />
 
       <TitleSection scrollRef={ref} />
 
       <SecondSection scrollRef={ref} />
-      
-      <FooterSection scrollRef={ref} /> 
-    </>
+
+      <FooterSection scrollRef={ref} />
+    </div>
   );
 }
 
