@@ -20,17 +20,16 @@ export default function TitleSection(props: {
       />
 
       <div className="h-full grid grid-rows-4 grid-cols-1 mb-16">
-        <div className="row-span-3 flex flex-col justify-center">
+        <div className="row-span-3 flex flex-col justify-center text-center gap-8">
           {/* TITLE */}
           <h1
             className={`
-              font-archivioBlack tracking-widest uppercase leading-none text-[17vw] text-light 
-              text-center
-              flex
-              row-auto
+              font-archivioBlack tracking-widest uppercase leading-none text-7xl sm:text-[15rem] text-light
               `}
           >
-            Kikko sport
+            Kikko
+            <br />
+            sport
           </h1>
 
           {/* SUBTITLE */}
