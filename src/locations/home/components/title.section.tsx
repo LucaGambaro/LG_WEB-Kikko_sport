@@ -19,30 +19,35 @@ export default function TitleSection(props: {
             bg-paragliding bg-cover bg-center bg-no-repeat bg-fixed opacity-10"
       />
 
-      <div className="h-[90vh]">
-        {/* TITLE */}
-        <h1
-          className={`
+      <div className="h-full grid grid-rows-4 grid-cols-1 mb-16">
+        <div className="row-span-3 flex flex-col justify-center">
+          {/* TITLE */}
+          <h1
+            className={`
               font-archivioBlack tracking-widest uppercase leading-none text-[17vw] text-light 
               text-center
               flex
+              row-auto
               `}
-        >
-          Kikko sport
-        </h1>
+          >
+            Kikko sport
+          </h1>
 
-        {/* SUBTITLE */}
-        <h3
-          className="
-            font-archivioBlack tracking-widest text-accent1 mt-16 uppercase text-3xl
+          {/* SUBTITLE */}
+          <h3
+            className="
+            font-archivioBlack tracking-widest text-accent1 uppercase text-3xl
             text-center
             "
-        >
-          Equipaggiati per Vincere
-        </h3>
-      </div>
+          >
+            Equipaggiati per Vincere
+          </h3>
+        </div>
 
-      <NextSectionArrow />
+        <div className="h-full flex items-end">
+          <NextSectionArrow />
+        </div>
+      </div>
     </motion.section>
   );
 }
