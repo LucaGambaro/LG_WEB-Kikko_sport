@@ -8,7 +8,7 @@ export default function FooterSection(props: {
   return (
     <motion.section
       ref={scrollRef}
-      className="snap-start z-0 relative h-svh w-full text-center flex flex-col justify-center items-center gap-14"
+      className="sm:snap-start z-0 relative h-svh w-full text-center flex flex-col justify-center items-center gap-14"
     >
       {/* BACKGROUND IMAGE */}
       <div

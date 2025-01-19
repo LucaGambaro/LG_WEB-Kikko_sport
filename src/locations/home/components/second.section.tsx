@@ -9,7 +9,7 @@ export default function SecondSection(props: {
   return (
     <motion.section
       ref={scrollRef}
-      className="snap-start z-0 relative h-full min-h-svh bg-bg1 pb-14"
+      className="sm:snap-start z-0 relative h-full min-h-svh bg-bg1 pb-14"
     >
       {/* BACKGROUND IMAGE */}
       <div
@@ -29,7 +29,9 @@ export default function SecondSection(props: {
         Kikko sport, il punto di riferimento per articoli sportivi
       </h1>
 
-      <NextSectionArrow className="mt-32" />
+      <motion.div>
+        <NextSectionArrow className="mt-32" />
+      </motion.div>
     </motion.section>
   );
 }

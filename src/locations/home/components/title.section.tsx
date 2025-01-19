@@ -9,7 +9,7 @@ export default function TitleSection(props: {
   return (
     <motion.section
       ref={scrollRef}
-      className="snap-start h-svh bg-bg1 min-h-full flex flex-col justify-center relative z-0"
+      className="sm:snap-start h-svh bg-bg1 min-h-full flex flex-col justify-center relative z-0"
     >
       {/* BACKGROUND IMAGE */}
       <div
