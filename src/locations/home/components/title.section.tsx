@@ -9,14 +9,14 @@ export default function TitleSection(props: {
   return (
     <motion.section
       ref={scrollRef}
-      className="sm:snap-start h-svh bg-bg1 min-h-full flex flex-col justify-center relative z-0"
+      className="sm:snap-start h-svh min-h-full flex flex-col justify-center relative z-0"
     >
       {/* BACKGROUND IMAGE */}
       <div
         className="
             absolute top-0 left-0 w-full
             min-h-full
-            bg-paragliding bg-cover bg-center bg-no-repeat bg-fixed opacity-10 -z-10"
+            bg-paragliding bg-cover bg-center bg-no-repeat bg-fixed opacity-20 -z-10"
       />
 
       <div className="h-full grid grid-rows-4 grid-cols-1 mb-16">
@@ -25,14 +25,14 @@ export default function TitleSection(props: {
           initial={{ opacity: 0, x: "-30vh" }}
           animate={{ opacity: 1, x: 0 }}
           transition={{
-            duration: 0.5,
+            duration: 1,
             scale: { type: "spring" },
           }}
         >
           {/* TITLE */}
           <h1
             className={`
-              font-archivioBlack tracking-widest uppercase leading-none text-7xl sm:text-[15rem] text-light
+              font-teko tracking-widest uppercase leading-none text-7xl sm:text-[15rem] text-light font-bold drop-shadow-2xl
               `}
           >
             Kikko
@@ -41,15 +41,13 @@ export default function TitleSection(props: {
           </h1>
 
           {/* SUBTITLE */}
-          <motion.div whileHover={{ scale: 1.2 }} whileTap={{ scale: 1.2 }}>
-            <h3
-              className="
-            font-archivioBlack tracking-widest text-accent1 uppercase text-2xl sm:text-4xl
+          <h3
+            className="
+            font-archivioBlack tracking-widest text-accent1 uppercase text-2xl sm:text-4xl drop-shadow-2xl
             text-center z-10"
-            >
-              Equipaggiati per Vincere
-            </h3>
-          </motion.div>
+          >
+            Equipaggiati per Vincere
+          </h3>
         </motion.div>
 
         <motion.div
@@ -58,7 +56,7 @@ export default function TitleSection(props: {
           animate={{ opacity: 1, scale: 1, y: 0 }}
           transition={{
             duration: 1,
-            scale: { type: "spring"  },
+            scale: { type: "spring" },
           }}
         >
           <NextSectionArrow />

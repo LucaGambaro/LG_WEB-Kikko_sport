@@ -9,7 +9,7 @@ export default function SecondSection(props: {
   return (
     <motion.section
       ref={scrollRef}
-      className="sm:snap-start z-0 relative h-full min-h-svh bg-bg1 pb-14"
+      className="sm:snap-start z-0 relative h-full min-h-svh pb-14"
     >
       {/* BACKGROUND IMAGE */}
       <div
